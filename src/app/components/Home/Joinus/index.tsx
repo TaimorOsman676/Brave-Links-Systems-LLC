@@ -13,7 +13,7 @@ const Join = () => {
           <h2 className='my-6'>Take your business to the new level"</h2>
          <p className='text-black/50 text-base font-normal max-w-3xl mx-auto'>
             Brave Links Systems LLC offers expert BPO services to streamline operations.
-            From customer support to IT solutions, we drive your business growth.
+            From customer support to IT solutions, we drive your business growth..
           </p>
         </div>
 
