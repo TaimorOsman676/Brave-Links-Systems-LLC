@@ -1,126 +1,56 @@
-'use client'
+// components/Footer.jsx (Next.js + TailwindCSS)
 
-import Image from 'next/image'
-import Link from 'next/link'
-import { useEffect, useState } from 'react'
-import { footerlinks } from '@/app/types/footerlinks'
-
-const footer = () => {
-  // fetch data
-
-  const [footerlinks, setFooterLinks] = useState<footerlinks[]>([])
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await fetch('/api/data')
-        if (!res.ok) throw new Error('Failed to fetch')
-        const data = await res.json()
-        setFooterLinks(data.FooterLinksData)
-      } catch (error) {
-        console.error('Error fetching services:', error)
-      }
-    }
-    fetchData()
-  }, [])
-
+export default function Footer() {
   return (
-    <div className='bg-black' id='first-section'>
-      <div className='container mx-auto max-w-2xl pt-48 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:px-8'>
-        <div className='grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8'>
-          {/* COLUMN-1 */}
-          <div className='col-span-4'>
-            <h4 className='text-white text-3xl leading-9 mb-4 lg:mb-20'>
-              Brave Links Systems LLC
-            </h4>
-            <div className='flex items-center gap-4'>
-              <div className='footer-icons'>
-                <Link href='https://facebook.com'>
-                  <Image
-                    src={'/images/footer/vec.svg'}
-                    alt='facebook'
-                    width={15}
-                    height={20}
-                  />
-                </Link>
-              </div>
-              <div className='footer-icons'>
-                <Link href='https://twitter.com'>
-                  <Image
-                    src={'/images/footer/twitter.svg'}
-                    alt='twitter'
-                    width={25}
-                    height={20}
-                  />
-                </Link>
-              </div>
-              <div className='footer-icons'>
-                <Link href='https://instagram.com'>
-                  <Image
-                    src={'/images/footer/instagram.svg'}
-                    alt='instagram'
-                    width={25}
-                    height={20}
-                  />
-                </Link>
-              </div>
-            </div>
-          </div>
-          {/* CLOUMN-2/3 */}
-          {footerlinks.map((item, i) => (
-            <div key={i} className='group relative col-span-2'>
-              <p className='text-white text-xl font-extrabold mb-9'>
-                {item.section}
-              </p>
-              <ul>
-                {item.links.map((item, i) => (
-                  <li key={i} className='mb-5'>
-                    <Link
-                      href={`${item.href}`}
-                      className='text-white text-lg font-normal mb-6 space-links hover:text-white/60 hover:underline'>
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+    <footer className="bg-gray-900 text-white py-10 px-5 md:px-20 relative z-10">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+        {/* Column 1 - About */}
+        <div>
+          <h1 className="text-xl font-semibold mb-4 text-white">Brave Links Systems LLC</h1>
+          <p className="text-sm leading-relaxed text-gray-300">
+            Brave Link Systems LLC is a leading service provider offering reliable solutions in the IT and BPO industry. We help businesses grow with innovative strategies.
+          </p>
         </div>
-      </div>
-      {/* All Rights Reserved */}
-      <div className='mx-auto max-w-2xl lg:max-w-7xl'>
-        <div className='pt-5 pb-5 px-4 sm:px-6 lg:px-4 border-t border-white/30'>
-          <div className='mt-4 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 xl:gap-x-8'>
-            <div>
-              <p className='text-center md:text-start text-white text-lg'>
-                @2025 - All Rights Reserved by{' '}
-                <Link
-                  href='https://getnextjstemplates.com/'
-                  target='_blank'
-                  className='hover:text-white/60 hover:underline'>
-                  {' '}
-                  Brave Links Systems LLC
 
-                </Link>
-              </p>
-            </div>
-            <div className='flex justify-center md:justify-end'>
-              <Link href='/'>
-                <p className='text-base text-white pr-6 hover:text-white/60 hover:underline'>
-                  Privacy policy
-                </p>
-              </Link>
-              <Link href='/'>
-                <p className='text-base text-white pl-6 border-solid border-l border-footer hover:text-white/60 hover:underline'>
-                  Terms & conditions
-                </p>
-              </Link>
-            </div>
-          </div>
+        {/* Column 2 - Quick Links */}
+        <div>
+          <h2 className="text-xl font-semibold text-white mb-4">Quick Links</h2>
+          <ul className="space-y-2 text-sm text-gray-300">
+            <li><a href="/about" className="hover:text-white">About</a></li>
+            <li><a href="/services" className="hover:text-white">Services</a></li>
+            <li><a href="/contact" className="hover:text-white">Contact</a></li>
+            <li><a href="/careers" className="hover:text-white">Careers</a></li>
+          </ul>
+        </div>
+
+        {/* Column 3 - Legal */}
+        <div>
+          <h2 className="text-xl font-semibold text-white mb-4">Legal</h2>
+          <ul className="space-y-2 text-sm text-gray-300">
+            <li><a href="/privacy-policy" className="hover:text-white">Privacy Policy</a></li>
+            <li><a href="/terms-of-service" className="hover:text-white">Terms of Service</a></li>
+            <li><a href="/disclaimer" className="hover:text-white">Disclaimer</a></li>
+          </ul>
+        </div>
+
+        {/* Column 4 - Contact */}
+        <div className="md:text-start">
+          <h2 className="text-xl font-semibold mb-4 text-white">Contact</h2>
+          <ul className="space-y-2 text-sm text-gray-300">
+            <li><strong>Website:</strong> <a href="https://bravelinksystemsllc.com" className="text-blue-400 hover:underline">bravelinksystemsllc.com</a></li>
+            <li><strong>Email:</strong> info@bravelinksystemsllc.com</li>
+            <li><strong>Phone:</strong> +1 646-249-5293</li>
+            <li><strong>Phone:</strong> +1 646-554-2858</li>
+
+            <li><strong>Address:</strong> 123 Main Street, City, State, ZIP</li>
+          </ul>
         </div>
       </div>
-    </div>
-  )
+
+      {/* Bottom Footer */}
+      <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-400">
+        &copy; {new Date().getFullYear()} Brave Link Systems LLC. All rights reserved.
+      </div>
+    </footer>
+  );
 }
-
-export default footer

@@ -15,6 +15,8 @@ const headerData: HeaderItem[] = [
   { label: 'Team', href: '#Team' },
   { label: 'FAQ', href: '#FAQ' },
   { label: 'Blog', href: '#Blog' },
+  { label: 'Services', href: '#Services' },
+
 ]
 
 // about data
@@ -46,7 +48,7 @@ const Aboutdata: aboutdata[] = [
 const WorkData: workdata[] = [
   {
     name: "Mr. Imran Khan Sadri",
-    profession: "Founder CEO | Brave BPO",
+    profession: "Founder CEO",
     imgSrc: "/images/Team/imran-khan.jpg",
   },
   {
@@ -56,64 +58,64 @@ const WorkData: workdata[] = [
   },
   {
     name: "Mr. Akbar Khan",
-    profession: "Director Operations",
+    profession: "Director Operations",  
     imgSrc: "/images/Team/akbar-khan.jpg",
   },
   {
     name: "Ms. Zainab Shahid",
-    profession: "HR Manager – Brave BPO",
+    profession: "HR Manager",
     imgSrc: "/images/Team/zainab-shahid.jpg",
   },
-  {
-    name: "Mr. Muhammad Shahryar",
-    profession: "Operations Manager | Brave BPO 1.0",
-    imgSrc: "/images/Team/shahryar.jpg",
-  },
+  // {
+  //   name: "Mr. Muhammad Shahryar",
+  //   profession: "Operations Manager | Brave BPO 1.0",
+  //   imgSrc: "/images/Team/shahryar.jpg",
+  // },
   {
     name: "Mr. Mashal Khan Sadri",
-    profession: "Operations Manager | Brave BPO 2.0",
+    profession: "Operations Manager",
     imgSrc: "/images/Team/mashal-khan.jpg",
   },
   {
     name: "Mr. Zia Ullah Khan",
-    profession: "Compliance Manager – Brave BPO 2.0",
+    profession: "Compliance Manager",
     imgSrc: "/images/Team/zia-ullah.jpg",
   },
   {
     name: "Mr. Muhammad Usman",
-    profession: "Software Project Manager – Brave BPO",
+    profession: "Software Project Manager",
     imgSrc: "/images/Team/muhammad-usman.png",
   },
   {
     name: "Mr. Taimor Osman Khan",
-    profession: "Web and Digital Media Manager – Brave BPO",
+    profession: "Softawre Project Manager",
     imgSrc: "/images/Team/taimor-osman.jpg",
   },
   {
     name: "Ms. Sumbal Shahid",
-    profession: "Finance Manager – Brave BPO 2.0",
+    profession: "Finance Manager",
     imgSrc: "/images/Team/sumbal-shahid.jpg",
   },
   {
     name: "Ms. Neha Zaheer",
-    profession: "Front Desk Officer – Brave BPO 2.0",
+    profession: "Front Desk Officer",
     imgSrc: "/images/Team/neha-zaheer.jpg",
   },
-  {
-    name: "Mr. Zaman Khan",
-    profession: "QA Manager – Brave BPO",
-    imgSrc: "/images/Team/zaman-khan.jpg",
-  },
-  {
-    name: "Mr. Rehman Khan",
-    profession: "Business Development Manager – Brave BPO",
-    imgSrc: "/images/Team/rehman-khan.png",
-  },
-  {
-    name: "Mr. Faraz",
-    profession: "Director. Business Development",
-    imgSrc: "/images/Team/maqsood.jpg",
-  },
+  // {
+  //   name: "Mr. Zaman Khan",
+  //   profession: "QA Manager – Brave BPO",
+  //   imgSrc: "/images/Team/zaman-khan.jpg",
+  // },
+  // {
+  //   name: "Mr. Rehman Khan",
+  //   profession: "Business Development Manager – Brave BPO",
+  //   imgSrc: "/images/Team/rehman-khan.png",
+  // },
+  // {
+  //   name: "Mr. Faraz",
+  //   profession: "Director. Business Development",
+  //   imgSrc: "/images/Team/maqsood.jpg",
+  // },
   {
     name: "Mr. Taimor Ahmad",
     profession: "Project Manager – Brave BPO",
@@ -121,7 +123,7 @@ const WorkData: workdata[] = [
   },
   {
     name: "Mr. Bilawal Sajjad",
-    profession: "Information Technology Manager – Brave BPO",
+    profession: "ITManager – Brave BPO",
     imgSrc: "/images/Team/bilawal-sajjad.jpg",
   },
   {
@@ -134,36 +136,36 @@ const WorkData: workdata[] = [
     profession: "Team Lead – Brave BPO 2.0",
     imgSrc: "/images/Team/muhammad-saif.jpg",
   },
-  {
-    name: "Mr. Fawad Khan",
-    profession: "Team Lead – Brave BPO 2.0",
-    imgSrc: "/images/Team/fawad-khan.jpg",
-  },
-  {
-    name: "Mr. Umer-Bin-Tariq",
-    profession: "Digital Media Specialist – Brave BPO",
-    imgSrc: "/images/Team/umer-bin-tariq.jpg",
-  },
-  {
-    name: "Mr. Ali Asghar",
-    profession: "IT Support – Brave BPO 1.0",
-    imgSrc: "/images/Team/ali-asghar.jpeg",
-  },
-  {
-    name: "Muhammad Arman",
-    profession: "IT Support – Brave BPO 1.0",
-    imgSrc: "/images/Team/arman.jpg",
-  },
-  {
-    name: "Mr. Muhammad Shakeel",
-    profession: "Admin & Facilities Supervisor – Brave BPO",
-    imgSrc: "/images/Team/muhammad-shakeel.jpg",
-  },
-  {
-    name: "Mr. Alaudin Khan",
-    profession: "Security Supervisor – Brave BPO 2.0",
-    imgSrc: "/images/Team/alaudin-khan.jpg",
-  },
+  // {
+  //   name: "Mr. Fawad Khan",
+  //   profession: "Team Lead – Brave BPO 2.0",
+  //   imgSrc: "/images/Team/fawad-khan.jpg",
+  // },
+  // {
+  //   name: "Mr. Umer-Bin-Tariq",
+  //   profession: "Digital Media Specialist – Brave BPO",
+  //   imgSrc: "/images/Team/umer-bin-tariq.jpg",
+  // },
+  // {
+  //   name: "Mr. Ali Asghar",
+  //   profession: "IT Support – Brave BPO 1.0",
+  //   imgSrc: "/images/Team/ali-asghar.jpeg",
+  // },
+  // {
+  //   name: "Muhammad Arman",
+  //   profession: "IT Support – Brave BPO 1.0",
+  //   imgSrc: "/images/Team/arman.jpg",
+  // },
+  // {
+  //   name: "Mr. Muhammad Shakeel",
+  //   profession: "Admin & Facilities Supervisor – Brave BPO",
+  //   imgSrc: "/images/Team/muhammad-shakeel.jpg",
+  // },
+  // {
+  //   name: "Mr. Alaudin Khan",
+  //   profession: "Security Supervisor – Brave BPO 2.0",
+  //   imgSrc: "/images/Team/alaudin-khan.jpg",
+  // },
 ]
 
 const FeaturedData: featureddata[] = [
