@@ -41,6 +41,26 @@ const services = {
       icon: 'material-symbols:calendar-month',
     },
   ],
+  'Inbound Call Services': [
+    {
+      title: 'Customer Support',
+      description:
+        '24/7 support to help your customers with queries, complaints, and assistance needs.',
+      icon: 'mdi:headset',
+    },
+    {
+      title: 'Order Processing',
+      description:
+        'Accurate and fast order management via inbound calls for a smooth customer experience.',
+      icon: 'mdi:clipboard-check-outline',
+    },
+    {
+      title: 'Helpdesk Services',
+      description:
+        'Technical and general helpdesk support to resolve issues and boost client satisfaction.',
+      icon: 'mdi:lifebuoy',
+    },
+  ],
   'IT & Software Development': [
     {
       title: 'Custom Web Apps',
@@ -105,7 +125,7 @@ const services = {
 
 const Services = () => {
   return (
-    <section className='py-16 bg-gray-50'>
+    <section id='services' className='py-16 bg-gray-50'>
       <div className='container mx-auto px-4 max-w-7xl'>
         <h2 className='text-center text-4xl font-bold text-gray-800 mb-4'>
           Our Services

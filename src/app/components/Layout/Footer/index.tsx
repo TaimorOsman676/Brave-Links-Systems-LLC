@@ -42,7 +42,7 @@ export default function Footer() {
             <li><strong>Phone:</strong> +1 646-249-5293</li>
             <li><strong>Phone:</strong> +1 646-554-2858</li>
 
-            <li><strong>Address:</strong> 123 Main Street, City, State, ZIP</li>
+            <li><strong>Address:</strong> 30 N Gould St Ste N, Sheridan, WY 82801 USA</li>
           </ul>
         </div>
       </div>

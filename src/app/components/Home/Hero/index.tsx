@@ -31,9 +31,9 @@ const Hero = () => {
               Empowering business world-class BPO solutions.
             </h1>
             <Link href={'#'}>
-              <button className='bg-primary text-white text-xl font-semibold py-5 px-12 rounded-full hover:bg-darkmode hover:cursor-pointer mt-10'>
+              {/* <button className='bg-primary text-white text-xl font-semibold py-5 px-12 rounded-full hover:bg-darkmode hover:cursor-pointer mt-10'>
                 Start Now
-              </button>
+              </button> */}
             </Link>
           </div>
           <div className='xl:col-span-7 lg:col-span-6 lg:block hidden'>
