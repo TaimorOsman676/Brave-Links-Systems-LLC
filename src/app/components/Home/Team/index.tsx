@@ -13,7 +13,7 @@ const Team = () => {
         </h5>
         <div className='grid grid-cols-1 mt-16'>
           <Image
-            src='/images/team/team.webp'
+            src='/images/team/team.png'
             alt='office-image'
             height={684}
             width={1296}
