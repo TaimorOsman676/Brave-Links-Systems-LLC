@@ -125,7 +125,7 @@ const services = {
 
 const Services = () => {
   return (
-    <section id='services' className='py-16 bg-gray-50'>
+    <section id='Services' className='py-16 bg-gray-50'>
       <div className='container mx-auto px-4 max-w-7xl'>
         <h2 className='text-center text-4xl font-bold text-gray-800 mb-4'>
           Our Services
