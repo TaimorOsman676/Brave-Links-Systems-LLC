@@ -16,6 +16,8 @@ const headerData: HeaderItem[] = [
   { label: 'FAQ', href: '#FAQ' },
   { label: 'Blog', href: '#Blog' },
   { label: 'Services', href: '#Services' },
+  { label: 'Contact Us', href: '#ContactUs' },
+
 
 ]
 
@@ -344,7 +346,7 @@ const FooterLinksData: footerlinks[] = [
       { label: 'Customer Support', href: '/services/customer-support' },
       { label: 'IT Solutions', href: '/services/it-solutions' },
       { label: 'Data Management', href: '/services/data-management' },
-      { label: 'Contact Us', href: '/contact' },
+      { label: 'Contact Us', href: '/ContactUs' },
     ],
   },
   {

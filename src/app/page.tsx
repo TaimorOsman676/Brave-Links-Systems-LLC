@@ -14,6 +14,7 @@ import Join from '@/app/components/Home/Joinus'
 import Services from '@/app/components/Home/Services'
 
 import { Metadata } from 'next'
+import ContactUs from './components/Home/ContactUs/ContactUs'
 
 export const metadata: Metadata = {
   title: 'Brave Links Systems LLC',
@@ -36,6 +37,7 @@ export default function Home() {
       <Testimonial />
       <Articles />
       <Join />
+      <ContactUs/>
       {/* <Insta /> */}
     </main>
   )
