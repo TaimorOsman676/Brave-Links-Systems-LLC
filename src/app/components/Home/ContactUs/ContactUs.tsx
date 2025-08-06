@@ -92,7 +92,7 @@ const ContactUs = () => {
               id="message"
               name="message"
               placeholder="Message"
-              rows="4"
+              rows={4} // Changed from "4" to 4
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
             />
             <ValidationError prefix="Message" field="message" errors={state.errors} />
