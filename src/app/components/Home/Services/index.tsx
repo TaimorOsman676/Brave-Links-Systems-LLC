@@ -123,9 +123,24 @@ const services = {
   ],
 }
 
+const cardHoverColors = [
+  'hover:bg-pink-300',
+  'hover:bg-blue-300',
+  'hover:bg-purple-300',
+  'hover:bg-green-300',
+  'hover:bg-yellow-300',
+  'hover:bg-indigo-300',
+  'hover:bg-red-300',
+  'hover:bg-teal-300',
+  'hover:bg-orange-300',
+  'hover:bg-cyan-300',
+]
+
 const Services = () => {
   return (
-    <section id='Services' className='py-16 bg-gray-50'>
+    <section
+      id='Services'
+      className='py-16 bg-gradient-to-br from-[#f6f1ff] via-[#eaf5ff] to-[#e0ecff]'>
       <div className='container mx-auto px-4 max-w-7xl'>
         <h2 className='text-center text-4xl font-bold text-gray-800 mb-4'>
           Our Services
@@ -143,14 +158,16 @@ const Services = () => {
               {items.map((service, idx) => (
                 <div
                   key={idx}
-                  className='bg-white hover:bg-blue-600 transition-all duration-300 p-6 rounded-2xl shadow-md group'>
-                  <div className='text-4xl text-blue-600 group-hover:text-white mb-4'>
+                  className={`bg-white transition-all duration-300 p-6 rounded-2xl shadow-md group ${
+                    cardHoverColors[idx % cardHoverColors.length]
+                  }`}>
+                  <div className='text-4xl text-blue-600 group-hover:text-white mb-4 transition-all duration-300'>
                     <Icon icon={service.icon} />
                   </div>
-                  <h4 className='text-xl font-semibold text-gray-800 group-hover:text-white mb-2'>
+                  <h4 className='text-xl font-semibold text-gray-800 group-hover:text-white mb-2 transition-all duration-300'>
                     {service.title}
                   </h4>
-                  <p className='text-gray-600 group-hover:text-white text-sm'>
+                  <p className='text-gray-600 group-hover:text-white text-sm transition-all duration-300'>
                     {service.description}
                   </p>
                 </div>

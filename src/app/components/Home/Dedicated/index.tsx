@@ -43,7 +43,7 @@ const Dedicated = () => {
               At Brave Links Systems LLC, we provide innovative business process outsourcing services, streamlining operations and enhancing efficiency to drive your success.
             </p>
             <h5 className='mt-12 lg:pl-32 relative lg:before:block before:hidden before:absolute before:bg-black before:h-0.5 before:w-24 before:left-0 before:bottom-1/2 text-center lg:text-start'>
-              Brave BPO
+           CEO Imran Khan Sadri - Brave BPO
             </h5>
           </div>
         </div>
