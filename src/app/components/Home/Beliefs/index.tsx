@@ -29,7 +29,7 @@ const Beliefs = () => {
                 Get Started
               </Link>
             </div>
-            <h5 className='text-white text-center sm:text-start mt-8'>Taimor Osman Khan, CEO</h5>
+            <h5 className='text-white text-center sm:text-start mt-8'>Brave Links Systems LLC</h5>
           </div>
 
           {/* COLUMN-2 */}

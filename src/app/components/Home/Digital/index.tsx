@@ -2,7 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-
+import Services from '../Services'
 const Digital = () => {
   return (
     <section className='relative bg-cover bg-center overflow-hidden'>
@@ -19,7 +19,7 @@ const Digital = () => {
               </h2>
               <div className='text-center lg:text-start'>
                 <Link
-                  href='#'
+                  href='/Services'
                   className='text-xl font-semibold text-white bg-deep-slate/80 hover:bg-deep-slate py-4 px-12 rounded-full'>
                   Start Now
                 </Link>
