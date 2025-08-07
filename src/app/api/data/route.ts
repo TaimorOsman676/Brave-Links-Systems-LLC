@@ -19,6 +19,7 @@ const headerData: HeaderItem[] = [
   { label: 'Contact Us', href: '#ContactUs' },
 
 
+
 ]
 
 // about data
@@ -360,8 +361,8 @@ const FooterLinksData: footerlinks[] = [
   {
     section: 'Legal',
     links: [
-      { label: 'Privacy Policy', href: '/privacy-policy' },
-      { label: 'Terms of Service', href: '/terms' },
+      { label: 'Privacy Policy', href: '/#PrivacyPolicy' },
+      { label: 'Terms of Service', href: '/#TermsOfService' },
     ],
   },
 ]

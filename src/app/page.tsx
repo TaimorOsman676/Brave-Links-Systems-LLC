@@ -15,7 +15,7 @@ import Services from '@/app/components/Home/Services'
 
 import { Metadata } from 'next'
 import ContactUs from './components/Home/ContactUs/ContactUs'
-
+import PrivacyPolicy from './components/Home/PrivacyPolicy/PrivacyPolicy'
 export const metadata: Metadata = {
   title: 'Brave Links Systems LLC',
 }
